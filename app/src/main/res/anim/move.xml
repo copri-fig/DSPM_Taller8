@@ -1,29 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Izquierda a derecha y regresa -->
     <translate
         android:fromXDelta="0"
-        android:toXDelta="95%"
+        android:toXDelta="40%p"
         android:duration="2000"
-    />
+        android:repeatCount="1"
+        android:repeatMode="reverse"
+        android:interpolator="@android:anim/linear_interpolator"/>
 
     <translate
-        android:startOffset="2000"
+        android:startOffset="4000"
         android:fromXDelta="0"
-        android:toXDelta="-95%"
+        android:toXDelta="-40%p"
         android:duration="2000"
-        />
+        android:repeatCount="1"
+        android:repeatMode="reverse"
+        android:interpolator="@android:anim/linear_interpolator" />
 
+    <!-- Arriba a abajo y regresa -->
     <translate
-        android:startOffset="4500"
         android:fromYDelta="0"
-        android:toYDelta="95%"
+        android:toYDelta="40%p"
         android:duration="2000"
-        />
+        android:repeatCount="1"
+        android:repeatMode="reverse"
+        android:startOffset="12000"
+        android:interpolator="@android:anim/linear_interpolator"/>
 
     <translate
-        android:startOffset="2000"
-        android:fromYDelta="95%"
-        android:toYDelta="0"
+        android:fromYDelta="0"
+        android:toYDelta="-40%p"
         android:duration="2000"
-        />
+        android:repeatCount="1"
+        android:repeatMode="reverse"
+        android:startOffset="16000"
+        android:interpolator="@android:anim/linear_interpolator" />
+
+
+
+
+
 </set>
